@@ -10,6 +10,27 @@
 .hamburger {
     display: none;
 }
+a:hover {
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+button {
+    transition: background-color ease-in-out .3s;
+}
+
+button:hover {
+    background: hsl(240, 100%, 5%);
+}
+
+.side-h4 {
+    transition: color ease-in-out 3.s;
+    cursor: pointer;
+}
+
+.side-h4:hover {
+    color: hsl(35, 77%, 62%);
+}
 
 body {
     width: 80%;
@@ -373,16 +394,17 @@ h1 {
     }
 
     .showen {
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: initial;
         width: 60%;
         z-index: 9;
         margin-left: auto;
         background-color: #fff;
         right: 0;
-        top: 200px;
+        top: 0;
+        bottom: 0;
     }
 
     .showen>a {
